@@ -32,7 +32,7 @@ app.post('/data', async (req: Request, res: Response) => {
   }
 });
 // Endpoint at / with GET and POST that returns data with Content-Type: text/plain
-app.use('/', orderRouter);
+//app.use('/', orderRouter);
 
 
 // Start the server
