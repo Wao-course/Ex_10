@@ -8,11 +8,11 @@ console.log("Order router initialized");
 const router = express.Router();
 
 try {
-
+ 
   try {
   // Attempt to create a MongoDB connection
   mongoose.connect(
-    "mongodb://root:example@mongo:27017/", {dbName: "orders"}
+    "mongodb://root:example@localhost:27017/", {dbName: "Orders"}
   );
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
